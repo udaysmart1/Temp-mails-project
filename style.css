@@ -1,0 +1,79 @@
+:root {
+  --primary-color: #4CAF50;
+  --secondary-color: #555555;
+  --background-color: #f0f2f5;
+  --font-color: #333333;
+  --button-hover-color: #45a049;
+  --header-gradient: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+  --footer-gradient: linear-gradient(90deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+
+header {
+  background: var(--header-gradient);
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+header .ascii-art {
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+input {
+  padding: 10px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--button-hover-color);
+}
+
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+table th, table td {
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+footer {
+  background: var(--footer-gradient);
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}
